@@ -7,7 +7,11 @@ ftoc (98.6)
 ftoc (68)
 
 def ctof (number)
+<<<<<<< HEAD
     return (number * 9.0/5 + 32).to_f
+=======
+   return (number * 9.0/5 + 32).to_f
+>>>>>>> ba71d8649a8ae18f0a9f0e759d3892c14cf7aa10
     
 end
 ctof (0)

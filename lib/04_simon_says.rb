@@ -37,7 +37,16 @@ first_word("Hello World")
 first_word("oh dear")
 
 def titleize(var)
-    var.split.map(&:capitalize).join ' '
+    no_words = ["and", "the"]
+    var = var.split
+    var.length.times do |x|
+        if x == 0
+            var[x].capitalize!
+        elsif !no_words.include?(var[x])
+            var[x].capitalize!
+        end
+    end
+    return var.join(' ')
 end
 
 titleize("jaws")

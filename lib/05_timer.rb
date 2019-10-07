@@ -1,5 +1,5 @@
 def time_string(var)
-    var.utc_dt.strftime ("%H:%M:%S")
+    return Time.at(var).utc.strftime ("%H:%M:%S")
 end
 #Time.at(var)
 time_string(0)

@@ -7,7 +7,7 @@ ftoc (98.6)
 ftoc (68)
 
 def ctof (number)
-ans = (number * 9.0/5 + 32).to_f
+   return (number * 9.0/5 + 32).to_f
     
 end
 ctof (0)
